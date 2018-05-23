@@ -20,6 +20,11 @@ public class SimpleFormController {
     public String indexPage() {
     	return "index";
     }
+    
+    @RequestMapping("/welcome.html")
+    public String welcomePage() {
+    	return "welcome";
+    }
      
     @RequestMapping(value="/form.html", method=RequestMethod.GET)
     public String customerForm(@ModelAttribute("custCmd") Customer customer){
